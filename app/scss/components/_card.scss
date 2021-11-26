@@ -1,0 +1,113 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.card {
+  display: inline-bl;
+
+  background-color: hsl(var(--clr-neutral-bg-card));
+  height: min-content;
+  width: min-content;
+  padding: 1.5rem;
+  
+  border-radius: $card-border-radius;
+  box-shadow: $card-shadow;
+
+  &__img-container {
+
+  }
+
+  &__img-link {
+    display: block;
+
+    position: relative;
+
+    background-image: url('/app/assets/images/image-equilibrium.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 278px;
+    height: 278px;
+
+    border-radius: $img-border-radius;
+
+    &::before {
+      content: url('/app/assets/images/icon-view.svg');
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      transition: opacity 400ms ease-in-out;
+      @include mq-reduced-motion;
+
+      visibility: none;
+      opacity: 0;
+    }
+
+    &:hover {
+      background-color: hsl(var(--clr-primary-cyan) / 0.5);
+      background-blend-mode: overlay;
+
+      transition: background-color 400ms ease-in-out;
+      @include mq-reduced-motion;
+
+      cursor: pointer;
+    }
+
+    &:hover::before {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__content {
+    margin-top: 1.5rem;
+  }
+
+  &__title {
+    margin-bottom: 0.75rem;
+
+    @include mq(large) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__description {
+    padding-bottom: 1rem;
+
+    @include mq(large) {
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  &__price, &__days {
+    flex-basis: 50%;
+
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  &__days {
+    justify-content: flex-end;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid hsl(var(--clr-neutral-line));
+
+    @include mq(large) {
+      margin-top: 1.5rem;
+    }
+
+    img {
+      width: 33px;
+      border: 1px solid hsl(var(--clr-neutral-white));
+      border-radius: 50%;
+    }
+  }
+}

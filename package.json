@@ -1,0 +1,21 @@
+{
+  "name": "nft-preview-card-component",
+  "version": "1.0.0",
+  "description": "This is a frontendmentor.io challenge.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yasmine De Wolf",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.0",
+    "browser-sync": "^2.27.7",
+    "cssnano": "^5.0.11",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.0.0",
+    "postcss": "^8.4.0",
+    "sass": "^1.43.4"
+  }
+}

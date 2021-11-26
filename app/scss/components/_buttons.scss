@@ -1,0 +1,9 @@
+.link {
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover, 
+  &:focus-visible {
+    color: hsl(var(--clr-primary-cyan));
+  }
+}

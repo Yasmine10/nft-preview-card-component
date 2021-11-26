@@ -1,0 +1,52 @@
+@use 'sass:map';
+@use './fonts' as *;
+@use '../abstracts/mixins' as *;
+
+body {
+  font-family: map.get($font-families, 'primary');
+}
+
+.h1 {
+  font-size: map.get($font-sizes-mobile, 'h1');
+  font-weight: map.get($font-weights, 'semi-bold');
+  line-height: 28px;
+  color: hsl(var(--clr-neutral-white));
+
+  @include mq(large) {
+    font-size: map.get($font-sizes-desktop, 'h1');
+  }
+}
+
+.p {
+  font-size: map.get($font-sizes-mobile, 'text');
+  font-weight: map.get($font-weights, 'light');
+  line-height: 26px;
+  color: hsl(var(--clr-primary-soft-blue));
+
+  @include mq(large) {
+    font-size: map.get($font-sizes-desktop, 'text');
+  }
+}
+
+.p-small {
+  font-size: map.get($font-sizes-mobile, 'text-sm');
+  font-weight: map.get($font-weights, 'light');
+  line-height: 19px;
+  color: hsl(var(--clr-primary-soft-blue));
+
+  @include mq(large) {
+    font-size: map.get($font-sizes-desktop, 'text-sm');
+  }
+}
+
+.text-cyan {
+  color: hsl(var(--clr-primary-cyan));
+}
+
+.text-white {
+  color: hsl(var(--clr-neutral-white));
+}
+
+.text-bold {
+  font-weight: map.get($font-weights, 'semi-bold');
+}

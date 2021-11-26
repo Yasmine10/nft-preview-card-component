@@ -1,0 +1,27 @@
+@use '../abstracts/variables' as *;
+
+body {
+  background-color: hsl(var(--clr-neutral-bg-main));
+  color: hsl(var(--clr-neutral-white));
+
+  height: 100%;
+}
+
+
+/* util classes */
+
+.center-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-jc-spbtw {
+  justify-content: space-between;
+}

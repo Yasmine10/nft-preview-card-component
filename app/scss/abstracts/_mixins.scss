@@ -1,0 +1,21 @@
+@use 'sass:map';
+
+$breakpoints: (
+  small: 23.5rem,     // 375px
+  medium: 48rem,      // 768px
+  large: 70rem        // 1120px
+);
+
+/* media query for breakpoints / responsiveness */
+@mixin mq($size) {
+  @media (min-width: map.get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+/* media query for motion preference */
+@mixin mq-reduced-motion {
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}
