@@ -10,9 +10,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -26,12 +23,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Solution screenshot](https://github.com/Yasmine10/nft-preview-card-component/blob/main/app/assets/design/nft-preview-card-component-solution.png?raw=true)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Yasmine10/nft-preview-card-component](https://github.com/Yasmine10/nft-preview-card-component)
+- Live Site URL: [https://nft-preview-card-component-yasmine.vercel.app/](https://nft-preview-card-component-yasmine.vercel.app/)
 
 ## My process
 
